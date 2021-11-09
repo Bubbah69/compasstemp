@@ -15,7 +15,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 let degrees = 0
 music.setVolume(80)
-led.setBrightness(30)
+led.setBrightness(15)
 basic.showIcon(IconNames.Happy)
 basic.forever(function () {
     degrees = input.compassHeading()
@@ -27,7 +27,6 @@ basic.forever(function () {
             . . # . .
             . . # . .
             `)
-        music.playTone(988, music.beat(BeatFraction.Sixteenth))
     } else if (degrees < 135) {
         basic.showLeds(`
             . . # . .
